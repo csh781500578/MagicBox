@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MagicBox"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "swift开发常用工具"
   spec.description  = "swift开发始于2020年2月18日"
   spec.homepage     = "https://github.com/csh781500578/MagicBox.git"
