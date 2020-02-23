@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/csh781500578/MagicBox.git", :tag => spec.version }
   spec.swift_version = '5.0'
-  spec.source_files  = "Classes", "Classes/**/*.{swift,h,m,c}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Tools", "Tools/**/*.{swift,h,m,c}"
+  spec.exclude_files = "Tools/Exclude"
   spec.requires_arc  = true
 end

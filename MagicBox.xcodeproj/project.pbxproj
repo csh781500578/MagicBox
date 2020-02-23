@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		0785819123FCE2D000583B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0785818F23FCE2D000583B24 /* Main.storyboard */; };
 		0785819323FCE2D300583B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785819223FCE2D300583B24 /* Assets.xcassets */; };
 		0785819623FCE2D300583B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0785819423FCE2D300583B24 /* LaunchScreen.storyboard */; };
+		0D7E4C68240217C1006FD5AF /* NBTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C67240217C1006FD5AF /* NBTools.swift */; };
+		DED1D71E3BC7C8E4FAD0A631 /* Pods_MagicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BCF01B7069DF24CF30C7C /* Pods_MagicBox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0785819223FCE2D300583B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0785819523FCE2D300583B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0785819723FCE2D300583B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D7E4C67240217C1006FD5AF /* NBTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBTools.swift; sourceTree = "<group>"; };
+		9C5AB2DB91FFFF1127A14B59 /* Pods-MagicBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBox.debug.xcconfig"; path = "Target Support Files/Pods-MagicBox/Pods-MagicBox.debug.xcconfig"; sourceTree = "<group>"; };
+		AFCD8A4FD4B98E94800AB5DD /* Pods-MagicBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBox.release.xcconfig"; path = "Target Support Files/Pods-MagicBox/Pods-MagicBox.release.xcconfig"; sourceTree = "<group>"; };
+		C82BCF01B7069DF24CF30C7C /* Pods_MagicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED1D71E3BC7C8E4FAD0A631 /* Pods_MagicBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0785818823FCE2D000583B24 /* MagicBox */,
 				0785818723FCE2D000583B24 /* Products */,
+				8F9F31C9CCE0A6DBBCF55646 /* Pods */,
+				9F8078CDDB4B2CFA46A54177 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		0785818823FCE2D000583B24 /* MagicBox */ = {
 			isa = PBXGroup;
 			children = (
+				0D7E4C66240217C1006FD5AF /* Tools */,
 				0785818923FCE2D000583B24 /* AppDelegate.swift */,
 				0785818B23FCE2D000583B24 /* SceneDelegate.swift */,
 				0785818D23FCE2D000583B24 /* ViewController.swift */,
@@ -67,6 +77,31 @@
 			path = MagicBox;
 			sourceTree = "<group>";
 		};
+		0D7E4C66240217C1006FD5AF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0D7E4C67240217C1006FD5AF /* NBTools.swift */,
+			);
+			path = Tools;
+			sourceTree = SOURCE_ROOT;
+		};
+		8F9F31C9CCE0A6DBBCF55646 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C5AB2DB91FFFF1127A14B59 /* Pods-MagicBox.debug.xcconfig */,
+				AFCD8A4FD4B98E94800AB5DD /* Pods-MagicBox.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F8078CDDB4B2CFA46A54177 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C82BCF01B7069DF24CF30C7C /* Pods_MagicBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0785819A23FCE2D300583B24 /* Build configuration list for PBXNativeTarget "MagicBox" */;
 			buildPhases = (
+				D75B3A17689F8A1DD9AB51BA /* [CP] Check Pods Manifest.lock */,
 				0785818223FCE2D000583B24 /* Sources */,
 				0785818323FCE2D000583B24 /* Frameworks */,
 				0785818423FCE2D000583B24 /* Resources */,
+				698D448E704209F7855EFBEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +170,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		698D448E704209F7855EFBEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MagicBox/Pods-MagicBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MagicBox/Pods-MagicBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MagicBox/Pods-MagicBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D75B3A17689F8A1DD9AB51BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0785818223FCE2D000583B24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0785818E23FCE2D000583B24 /* ViewController.swift in Sources */,
+				0D7E4C68240217C1006FD5AF /* NBTools.swift in Sources */,
 				0785818A23FCE2D000583B24 /* AppDelegate.swift in Sources */,
 				0785818C23FCE2D000583B24 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +362,7 @@
 		};
 		0785819B23FCE2D300583B24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5AB2DB91FFFF1127A14B59 /* Pods-MagicBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +381,7 @@
 		};
 		0785819C23FCE2D300583B24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCD8A4FD4B98E94800AB5DD /* Pods-MagicBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
