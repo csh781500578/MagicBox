@@ -15,6 +15,13 @@
 		0785819623FCE2D300583B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0785819423FCE2D300583B24 /* LaunchScreen.storyboard */; };
 		0D7E4C68240217C1006FD5AF /* NBTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C67240217C1006FD5AF /* NBTools.swift */; };
 		0D7E4C8D24022359006FD5AF /* NBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C8C24022359006FD5AF /* NBBaseViewController.swift */; };
+		0D7E4C8F24022758006FD5AF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C8E24022758006FD5AF /* UIViewExtension.swift */; };
+		0D7E4C9524022765006FD5AF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C9024022765006FD5AF /* UIViewControllerExtension.swift */; };
+		0D7E4C9624022765006FD5AF /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C9124022765006FD5AF /* UITableViewCellExtension.swift */; };
+		0D7E4C9724022765006FD5AF /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C9224022765006FD5AF /* UIButtonExtension.swift */; };
+		0D7E4C9824022765006FD5AF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C9324022765006FD5AF /* UIColorExtension.swift */; };
+		0D7E4C9924022765006FD5AF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C9424022765006FD5AF /* UIImageViewExtension.swift */; };
+		0D7E4C9C240227AF006FD5AF /* NBConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E4C9B240227AF006FD5AF /* NBConstant.swift */; };
 		DED1D71E3BC7C8E4FAD0A631 /* Pods_MagicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BCF01B7069DF24CF30C7C /* Pods_MagicBox.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +36,13 @@
 		0785819723FCE2D300583B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D7E4C67240217C1006FD5AF /* NBTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBTools.swift; sourceTree = "<group>"; };
 		0D7E4C8C24022359006FD5AF /* NBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBBaseViewController.swift; sourceTree = "<group>"; };
+		0D7E4C8E24022758006FD5AF /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		0D7E4C9024022765006FD5AF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		0D7E4C9124022765006FD5AF /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		0D7E4C9224022765006FD5AF /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		0D7E4C9324022765006FD5AF /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		0D7E4C9424022765006FD5AF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		0D7E4C9B240227AF006FD5AF /* NBConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBConstant.swift; sourceTree = "<group>"; };
 		9C5AB2DB91FFFF1127A14B59 /* Pods-MagicBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBox.debug.xcconfig"; path = "Target Support Files/Pods-MagicBox/Pods-MagicBox.debug.xcconfig"; sourceTree = "<group>"; };
 		AFCD8A4FD4B98E94800AB5DD /* Pods-MagicBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicBox.release.xcconfig"; path = "Target Support Files/Pods-MagicBox/Pods-MagicBox.release.xcconfig"; sourceTree = "<group>"; };
 		C82BCF01B7069DF24CF30C7C /* Pods_MagicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,11 +96,26 @@
 		0D7E4C66240217C1006FD5AF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				0D7E4C8C24022359006FD5AF /* NBBaseViewController.swift */,
+				0D7E4C9A24022794006FD5AF /* Extension */,
 				0D7E4C67240217C1006FD5AF /* NBTools.swift */,
+				0D7E4C8C24022359006FD5AF /* NBBaseViewController.swift */,
+				0D7E4C9B240227AF006FD5AF /* NBConstant.swift */,
 			);
 			path = Tools;
 			sourceTree = SOURCE_ROOT;
+		};
+		0D7E4C9A24022794006FD5AF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0D7E4C9024022765006FD5AF /* UIViewControllerExtension.swift */,
+				0D7E4C9124022765006FD5AF /* UITableViewCellExtension.swift */,
+				0D7E4C9424022765006FD5AF /* UIImageViewExtension.swift */,
+				0D7E4C9224022765006FD5AF /* UIButtonExtension.swift */,
+				0D7E4C9324022765006FD5AF /* UIColorExtension.swift */,
+				0D7E4C8E24022758006FD5AF /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
 		};
 		8F9F31C9CCE0A6DBBCF55646 /* Pods */ = {
 			isa = PBXGroup;
@@ -220,11 +249,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7E4C8F24022758006FD5AF /* UIViewExtension.swift in Sources */,
 				0785818E23FCE2D000583B24 /* ViewController.swift in Sources */,
 				0D7E4C68240217C1006FD5AF /* NBTools.swift in Sources */,
 				0785818A23FCE2D000583B24 /* AppDelegate.swift in Sources */,
 				0785818C23FCE2D000583B24 /* SceneDelegate.swift in Sources */,
+				0D7E4C9C240227AF006FD5AF /* NBConstant.swift in Sources */,
+				0D7E4C9724022765006FD5AF /* UIButtonExtension.swift in Sources */,
+				0D7E4C9924022765006FD5AF /* UIImageViewExtension.swift in Sources */,
+				0D7E4C9524022765006FD5AF /* UIViewControllerExtension.swift in Sources */,
+				0D7E4C9824022765006FD5AF /* UIColorExtension.swift in Sources */,
 				0D7E4C8D24022359006FD5AF /* NBBaseViewController.swift in Sources */,
+				0D7E4C9624022765006FD5AF /* UITableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

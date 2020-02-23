@@ -17,5 +17,16 @@ class NBTools: NSObject {
         return false
     }
     
+    static func isPhoneNumber(_ number: String?) -> Bool {
+        guard let phoneNumber = number else {
+            return false
+        }
+        if phoneNumber.isEmpty {
+            return false
+        }
+        let mobile = "^(13[0-9]|15[0-9]|18[0-9]|17[0-9]|147)\\d{8}$"
+        let regexMobile = NSPredicate(format: "SELF MATCHES %@",mobile)
+        return regexMobile.evaluate(with: phoneNumber)
+    }
     
 }
