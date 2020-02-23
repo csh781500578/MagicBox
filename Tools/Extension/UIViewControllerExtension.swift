@@ -27,13 +27,12 @@ extension UIViewController {
         let customeView = UIView(frame: CGRect(x: 0, y: 0, width: 35 * images.count, height: 26))
         
         for (index, image) in images.enumerated() {
-            let button = UIButton(type: .custom).then {
-                $0.frame = (CGRect)(x: 35 * index, y: 0, width: 26, height: 26)
-                $0.contentMode = .scaleAspectFit
-                $0.tag = 1000 + index
-                $0.setImage(image, for: .normal)
-                $0.addTarget(self, action: #selector(didSelectItemAction(_:)), for: .touchUpInside)
-            }
+            let button = UIButton(type: .custom)
+            button.frame = (CGRect)(x: 35 * index, y: 0, width: 26, height: 26)
+            button.contentMode = .scaleAspectFit
+            button.tag = 1000 + index
+            button.setImage(image, for: .normal)
+            button.addTarget(self, action: #selector(didSelectItemAction(_:)), for: .touchUpInside)
             customeView.addSubview(button)
         }
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: customeView)

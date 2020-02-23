@@ -8,10 +8,6 @@
 
 import UIKit
 
-extension UIView : UIViewPendantPotocol {
-    
-}
-
 extension UIView {
     
     @IBInspectable var cornerRadius: CGFloat {
