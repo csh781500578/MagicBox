@@ -10,11 +10,12 @@ import UIKit
 
 class NBTools: NSObject {
 
-    
     static func isValidity(_ string: String?) -> Bool {
         if let str = string, str.count > 0 {
             return true
         }
         return false
     }
+    
+    
 }
