@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/csh781500578/MagicBox.git"
   spec.license      = "MIT"
   spec.author       = { "hanrychen" => "781500578@qq.com" }
-  spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/csh781500578/MagicBox.git", :tag => spec.version }
   spec.swift_version = '5.0'
   spec.source_files  = "Tools", "Tools/**/*.{swift,h,m,c}"

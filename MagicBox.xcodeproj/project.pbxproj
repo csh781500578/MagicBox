@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0785818A23FCE2D000583B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785818923FCE2D000583B24 /* AppDelegate.swift */; };
-		0785818C23FCE2D000583B24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785818B23FCE2D000583B24 /* SceneDelegate.swift */; };
 		0785818E23FCE2D000583B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785818D23FCE2D000583B24 /* ViewController.swift */; };
 		0785819123FCE2D000583B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0785818F23FCE2D000583B24 /* Main.storyboard */; };
 		0785819323FCE2D300583B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785819223FCE2D300583B24 /* Assets.xcassets */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		0785818623FCE2D000583B24 /* MagicBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0785818923FCE2D000583B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0785818B23FCE2D000583B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0785818D23FCE2D000583B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0785819023FCE2D000583B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0785819223FCE2D300583B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			children = (
 				0D7E4C66240217C1006FD5AF /* Tools */,
 				0785818923FCE2D000583B24 /* AppDelegate.swift */,
-				0785818B23FCE2D000583B24 /* SceneDelegate.swift */,
 				0785818D23FCE2D000583B24 /* ViewController.swift */,
 				0785818F23FCE2D000583B24 /* Main.storyboard */,
 				0785819223FCE2D300583B24 /* Assets.xcassets */,
@@ -244,7 +241,6 @@
 				0785818E23FCE2D000583B24 /* ViewController.swift in Sources */,
 				0D7E4C68240217C1006FD5AF /* NBTools.swift in Sources */,
 				0785818A23FCE2D000583B24 /* AppDelegate.swift in Sources */,
-				0785818C23FCE2D000583B24 /* SceneDelegate.swift in Sources */,
 				0D7E4C9C240227AF006FD5AF /* NBConstant.swift in Sources */,
 				0D7E4C9524022765006FD5AF /* UIViewControllerExtension.swift in Sources */,
 				0D7E4C9824022765006FD5AF /* UIColorExtension.swift in Sources */,
@@ -396,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7R5X9K82P;
 				INFOPLIST_FILE = MagicBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,6 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7R5X9K82P;
 				INFOPLIST_FILE = MagicBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
